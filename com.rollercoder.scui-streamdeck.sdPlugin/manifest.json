@@ -1,0 +1,47 @@
+{
+	"Name": "Soundraft UI control for Stream Deck",
+	"Version": "0.1.0.0",
+	"Author": "rollercoder (Tobias Niepel)",
+	"Actions": [
+		{
+			"Name": "Mute Toggle",
+			"UUID": "com.rollercoder.scui-streamdeck.mute-toggle",
+			"Icon": "imgs/actions/mute/icon",
+			"Tooltip": "Toggle mute status of a mixer channel",
+			"PropertyInspectorPath": "ui/mute-toggle.html",
+			"Controllers": [
+				"Keypad"
+			],
+			"States": [
+				{
+					"Image": "imgs/actions/mute/key",
+					"TitleAlignment": "bottom"
+				}
+			]
+		}
+	],
+	"Category": "Soundraft UI control for Stream Deck",
+	"CategoryIcon": "imgs/plugin/category-icon",
+	"CodePath": "bin/plugin.js",
+	"Description": "Control your Soundcraft UI digital mixer with your Stream Deck",
+	"Icon": "imgs/plugin/marketplace",
+	"SDKVersion": 2,
+	"Software": {
+		"MinimumVersion": "6.4"
+	},
+	"OS": [
+		{
+			"Platform": "mac",
+			"MinimumVersion": "10.15"
+		},
+		{
+			"Platform": "windows",
+			"MinimumVersion": "10"
+		}
+	],
+	"Nodejs": {
+		"Version": "20",
+		"Debug": "enabled"
+	},
+	"UUID": "com.rollercoder.scui-streamdeck"
+}
